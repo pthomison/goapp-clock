@@ -14,10 +14,7 @@ func main() {
 	app.RunWhenOnBrowser()
 
 	// HTTP routing:
-	http.Handle("/", &app.Handler{
-		Name:        "Timer",
-		Description: "This is a timer",
-	})
+	http.Handle("/", timer.App())
 
 	if err := http.ListenAndServe(":8000", nil); err != nil {
 		log.Fatal(err)

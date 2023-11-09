@@ -6,6 +6,14 @@ tasks:
       - go mod tidy
       - go fmt
 
+  npm-deps:
+    cmds:
+      - npm install
+
+  bundle:
+    cmds:
+      - ./node_modules/.bin/esbuild index.js --bundle --outfile=./web/index.js
+
   build-webapp:
     cmds:
       - task: tidy-n-fmt

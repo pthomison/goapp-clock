@@ -21,6 +21,7 @@ func (t *Timer) Render() app.UI {
 		app.P().Body(
 			app.Input().
 				Type("text").
+				Class("input").
 				Value(t.name).
 				Placeholder("What is your name?").
 				AutoFocus(true).
