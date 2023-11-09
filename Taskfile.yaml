@@ -1,0 +1,17 @@
+version: "3"
+
+tasks:
+  tidy-n-fmt:
+    cmds:
+      - go mod tidy
+      - go fmt
+
+  build-webapp:
+    cmds:
+      - task: tidy-n-fmt
+      - GOARCH=wasm GOOS=js go build -o web/app.wasm .
+
+  run:
+    cmds:
+      - task: build-webapp
+      - go run .
