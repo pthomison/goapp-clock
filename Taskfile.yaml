@@ -17,9 +17,10 @@ tasks:
   build-webapp:
     cmds:
       - task: tidy-n-fmt
+      - task: bundle
       - GOARCH=wasm GOOS=js go build -o web/app.wasm .
 
-  run:
+  build:
     cmds:
       - task: build-webapp
-      - go run .
+      - go build -o goappclock .
