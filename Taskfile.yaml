@@ -23,4 +23,4 @@ tasks:
   build:
     cmds:
       - task: build-webapp
-      - go build -o goappclock .
+      - go build -o tmp/goappclock .

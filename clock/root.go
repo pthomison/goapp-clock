@@ -1,6 +1,8 @@
 package clock
 
 import (
+	"time"
+
 	"github.com/maxence-charriere/go-app/v9/pkg/app"
 )
 
@@ -11,7 +13,7 @@ type Root struct {
 }
 
 func (r *Root) OnMount(ctx app.Context) {
-	r.clock = &Clock{}
+	r.clock = NewClock(defaultTimeFormat, defaultDateFormat, 100*time.Millisecond)
 }
 
 func (r *Root) Render() app.UI {
