@@ -18,6 +18,15 @@ func main() {
 	app.RouteFunc("/", func() app.Composer {
 		return &clock.Root{}
 	})
+
+	app.RouteFunc("/goapp-clock/", func() app.Composer {
+		return &clock.Root{}
+	})
+
+	// app.Route("/goapp-clock", func() app.Composer {
+	// 	return &clock.Root{}
+	// })
+
 	app.RunWhenOnBrowser()
 
 	// HTTP routing:
