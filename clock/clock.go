@@ -66,12 +66,12 @@ func (c *Clock) OnMount(ctx app.Context) {
 func (c *Clock) Render() app.UI {
 	timeView := app.P().
 		Class("has-text-grey-lighter").
-		Class("heading").
+		Class("subtitle is-spaced").
 		Text(c.time)
 
 	dateView := app.P().
 		Class("has-text-grey-lighter").
-		Class("title").
+		Class("title is-1").
 		Text(c.date)
 
 	optionsView := app.Div().Body(
