@@ -1,4 +1,4 @@
-name: goreleaser
+name: github-pages
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - "main"
 
 jobs:
-  goreleaser:
+  github-pages:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -34,3 +34,10 @@ jobs:
       - name: Build Static Website
         run: "task gh-pages"
         shell: bash
+
+      - name: Commit Static Website
+        run: |
+          git config --global user.name 'GH Actions'
+          git config --global user.email 'pthomison+gh-actions-goapp-clock@gmail.com'
+          git commit -am "Doc Updates"
+          git push
