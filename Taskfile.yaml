@@ -29,17 +29,9 @@ tasks:
     cmds:
       - task: build
       - ./tmp/goappclock --build --path goapp-clock --out docs
-      # - task: build-webapp
       - mv ./web/* ./docs/web/ && rm -r ./web
 
-  # static:
-  #   cmds:
-
-  #     - task: build
-  #     - ./tmp/goappclock --build --path goapp-clock --out goapp-clock
-  #     - cp -R ./web/* ./goapp-clock/web/
-
-  # static-host:
-  #   cmds:
-  #     - task: static
-  #     - python3 -m http.server --directory . 8888
+  static-host:
+    cmds:
+      - task: gh-pages
+      - python3 -m http.server --directory . 8888

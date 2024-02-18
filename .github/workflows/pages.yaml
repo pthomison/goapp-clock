@@ -24,15 +24,15 @@ jobs:
         with:
           node-version: 21
 
-      - name: Install Node Deps
-        run: "npm install"
-        shell: bash
-
       - name: Install Task
         uses: arduino/setup-task@v2
 
+      # - name: Install Node Deps
+      #   run: "npm install"
+      #   shell: bash
+
       - name: Build Static Website
-        run: "task gh-pages"
+        run: "task npm-deps gh-pages"
         shell: bash
 
       - name: Deploy 🚀
