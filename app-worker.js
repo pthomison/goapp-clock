@@ -1,8 +1,8 @@
-const cacheName = "app-" + "1320200915a5c9d0aa91ba8fd020036a144c5ceb";
-const resourcesToCache = ["/goapp-clock","/goapp-clock/app.css","/goapp-clock/app.js","/goapp-clock/manifest.webmanifest","/goapp-clock/wasm_exec.js","/goapp-clock/web/app.wasm","/goapp-clock/web/index.css","/goapp-clock/web/index.js","https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png"];
+const cacheName = "app-" + "70e85888ed289f44b0c5915cd7fde634ed091ef3";
+const resourcesToCache = ["/goapp-clock","/goapp-clock/app.css","/goapp-clock/app.js","/goapp-clock/manifest.webmanifest","/goapp-clock/wasm_exec.js","/goapp-clock/web/app.wasm","/goapp-clock/web/index.css","/goapp-clock/web/index.js","/goapp-clock/web/static/android-chrome-192x192.png","/goapp-clock/web/static/android-chrome-512x512.png","/goapp-clock/web/static/apple-touch-icon.png"];
 
 self.addEventListener("install", (event) => {
-  console.log("installing app worker 1320200915a5c9d0aa91ba8fd020036a144c5ceb");
+  console.log("installing app worker 70e85888ed289f44b0c5915cd7fde634ed091ef3");
 
   event.waitUntil(
     caches
@@ -28,7 +28,7 @@ self.addEventListener("activate", (event) => {
       );
     })
   );
-  console.log("app worker 1320200915a5c9d0aa91ba8fd020036a144c5ceb is activated");
+  console.log("app worker 70e85888ed289f44b0c5915cd7fde634ed091ef3 is activated");
 });
 
 self.addEventListener("fetch", (event) => {

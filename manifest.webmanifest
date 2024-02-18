@@ -4,17 +4,17 @@
   "description": "This is a timer",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.svg",
+      "src": "/goapp-clock/web/static/favicon.ico",
       "type": "image/svg+xml",
       "sizes": "any"
     },
     {
-      "src": "https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png",
+      "src": "/goapp-clock/web/static/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.png",
+      "src": "/goapp-clock/web/static/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     }
