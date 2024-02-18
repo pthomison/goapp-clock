@@ -25,6 +25,13 @@ tasks:
       - task: build-webapp
       - go build -o tmp/goappclock .
 
+  gh-pages:
+    cmds:
+      - task: build
+      - rm -rf ./docs
+      - ./tmp/goappclock --build --path goapp-clock --out docs
+      - cp -R ./web/* ./docs/web/
+
   static:
     cmds:
       - task: build
