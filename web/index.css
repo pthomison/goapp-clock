@@ -2409,7 +2409,11 @@ div.icon-text {
   background-color: white;
 }
 .progress.is-white:indeterminate {
-  background-image: linear-gradient(to right, white 30%, #ededed 30%);
+  background-image:
+    linear-gradient(
+      to right,
+      white 30%,
+      #ededed 30%);
 }
 .progress.is-black::-webkit-progress-value {
   background-color: #0a0a0a;
@@ -2421,7 +2425,11 @@ div.icon-text {
   background-color: #0a0a0a;
 }
 .progress.is-black:indeterminate {
-  background-image: linear-gradient(to right, #0a0a0a 30%, #ededed 30%);
+  background-image:
+    linear-gradient(
+      to right,
+      #0a0a0a 30%,
+      #ededed 30%);
 }
 .progress.is-light::-webkit-progress-value {
   background-color: whitesmoke;
@@ -2433,7 +2441,11 @@ div.icon-text {
   background-color: whitesmoke;
 }
 .progress.is-light:indeterminate {
-  background-image: linear-gradient(to right, whitesmoke 30%, #ededed 30%);
+  background-image:
+    linear-gradient(
+      to right,
+      whitesmoke 30%,
+      #ededed 30%);
 }
 .progress.is-dark::-webkit-progress-value {
   background-color: #363636;
@@ -2445,7 +2457,11 @@ div.icon-text {
   background-color: #363636;
 }
 .progress.is-dark:indeterminate {
-  background-image: linear-gradient(to right, #363636 30%, #ededed 30%);
+  background-image:
+    linear-gradient(
+      to right,
+      #363636 30%,
+      #ededed 30%);
 }
 .progress.is-primary::-webkit-progress-value {
   background-color: #00d1b2;
@@ -2457,7 +2473,11 @@ div.icon-text {
   background-color: #00d1b2;
 }
 .progress.is-primary:indeterminate {
-  background-image: linear-gradient(to right, #00d1b2 30%, #ededed 30%);
+  background-image:
+    linear-gradient(
+      to right,
+      #00d1b2 30%,
+      #ededed 30%);
 }
 .progress.is-link::-webkit-progress-value {
   background-color: #485fc7;
@@ -2469,7 +2489,11 @@ div.icon-text {
   background-color: #485fc7;
 }
 .progress.is-link:indeterminate {
-  background-image: linear-gradient(to right, #485fc7 30%, #ededed 30%);
+  background-image:
+    linear-gradient(
+      to right,
+      #485fc7 30%,
+      #ededed 30%);
 }
 .progress.is-info::-webkit-progress-value {
   background-color: #3e8ed0;
@@ -2481,7 +2505,11 @@ div.icon-text {
   background-color: #3e8ed0;
 }
 .progress.is-info:indeterminate {
-  background-image: linear-gradient(to right, #3e8ed0 30%, #ededed 30%);
+  background-image:
+    linear-gradient(
+      to right,
+      #3e8ed0 30%,
+      #ededed 30%);
 }
 .progress.is-success::-webkit-progress-value {
   background-color: #48c78e;
@@ -2493,7 +2521,11 @@ div.icon-text {
   background-color: #48c78e;
 }
 .progress.is-success:indeterminate {
-  background-image: linear-gradient(to right, #48c78e 30%, #ededed 30%);
+  background-image:
+    linear-gradient(
+      to right,
+      #48c78e 30%,
+      #ededed 30%);
 }
 .progress.is-warning::-webkit-progress-value {
   background-color: #ffe08a;
@@ -2505,7 +2537,11 @@ div.icon-text {
   background-color: #ffe08a;
 }
 .progress.is-warning:indeterminate {
-  background-image: linear-gradient(to right, #ffe08a 30%, #ededed 30%);
+  background-image:
+    linear-gradient(
+      to right,
+      #ffe08a 30%,
+      #ededed 30%);
 }
 .progress.is-danger::-webkit-progress-value {
   background-color: #f14668;
@@ -2517,7 +2553,11 @@ div.icon-text {
   background-color: #f14668;
 }
 .progress.is-danger:indeterminate {
-  background-image: linear-gradient(to right, #f14668 30%, #ededed 30%);
+  background-image:
+    linear-gradient(
+      to right,
+      #f14668 30%,
+      #ededed 30%);
 }
 .progress:indeterminate {
   -webkit-animation-duration: 1.5s;
@@ -2529,7 +2569,11 @@ div.icon-text {
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   background-color: #ededed;
-  background-image: linear-gradient(to right, #4a4a4a 30%, #ededed 30%);
+  background-image:
+    linear-gradient(
+      to right,
+      #4a4a4a 30%,
+      #ededed 30%);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 150% 150%;
@@ -9964,11 +10008,21 @@ a.has-text-danger-dark:focus {
   color: white;
 }
 .hero.is-white.is-bold {
-  background-image: linear-gradient(141deg, #e6e6e6 0%, white 71%, white 100%);
+  background-image:
+    linear-gradient(
+      141deg,
+      #e6e6e6 0%,
+      white 71%,
+      white 100%);
 }
 @media screen and (max-width: 768px) {
   .hero.is-white.is-bold .navbar-menu {
-    background-image: linear-gradient(141deg, #e6e6e6 0%, white 71%, white 100%);
+    background-image:
+      linear-gradient(
+        141deg,
+        #e6e6e6 0%,
+        white 71%,
+        white 100%);
   }
 }
 .hero.is-black {
@@ -10033,11 +10087,21 @@ a.has-text-danger-dark:focus {
   color: #0a0a0a;
 }
 .hero.is-black.is-bold {
-  background-image: linear-gradient(141deg, black 0%, #0a0a0a 71%, #181616 100%);
+  background-image:
+    linear-gradient(
+      141deg,
+      black 0%,
+      #0a0a0a 71%,
+      #181616 100%);
 }
 @media screen and (max-width: 768px) {
   .hero.is-black.is-bold .navbar-menu {
-    background-image: linear-gradient(141deg, black 0%, #0a0a0a 71%, #181616 100%);
+    background-image:
+      linear-gradient(
+        141deg,
+        black 0%,
+        #0a0a0a 71%,
+        #181616 100%);
   }
 }
 .hero.is-light {
@@ -10102,11 +10166,21 @@ a.has-text-danger-dark:focus {
   color: whitesmoke;
 }
 .hero.is-light.is-bold {
-  background-image: linear-gradient(141deg, #dfd8d9 0%, whitesmoke 71%, white 100%);
+  background-image:
+    linear-gradient(
+      141deg,
+      #dfd8d9 0%,
+      whitesmoke 71%,
+      white 100%);
 }
 @media screen and (max-width: 768px) {
   .hero.is-light.is-bold .navbar-menu {
-    background-image: linear-gradient(141deg, #dfd8d9 0%, whitesmoke 71%, white 100%);
+    background-image:
+      linear-gradient(
+        141deg,
+        #dfd8d9 0%,
+        whitesmoke 71%,
+        white 100%);
   }
 }
 .hero.is-dark {
@@ -10171,11 +10245,21 @@ a.has-text-danger-dark:focus {
   color: #363636;
 }
 .hero.is-dark.is-bold {
-  background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%);
+  background-image:
+    linear-gradient(
+      141deg,
+      #1f191a 0%,
+      #363636 71%,
+      #46403f 100%);
 }
 @media screen and (max-width: 768px) {
   .hero.is-dark.is-bold .navbar-menu {
-    background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%);
+    background-image:
+      linear-gradient(
+        141deg,
+        #1f191a 0%,
+        #363636 71%,
+        #46403f 100%);
   }
 }
 .hero.is-primary {
@@ -10240,11 +10324,21 @@ a.has-text-danger-dark:focus {
   color: #00d1b2;
 }
 .hero.is-primary.is-bold {
-  background-image: linear-gradient(141deg, #009e6c 0%, #00d1b2 71%, #00e7eb 100%);
+  background-image:
+    linear-gradient(
+      141deg,
+      #009e6c 0%,
+      #00d1b2 71%,
+      #00e7eb 100%);
 }
 @media screen and (max-width: 768px) {
   .hero.is-primary.is-bold .navbar-menu {
-    background-image: linear-gradient(141deg, #009e6c 0%, #00d1b2 71%, #00e7eb 100%);
+    background-image:
+      linear-gradient(
+        141deg,
+        #009e6c 0%,
+        #00d1b2 71%,
+        #00e7eb 100%);
   }
 }
 .hero.is-link {
@@ -10309,11 +10403,21 @@ a.has-text-danger-dark:focus {
   color: #485fc7;
 }
 .hero.is-link.is-bold {
-  background-image: linear-gradient(141deg, #2959b3 0%, #485fc7 71%, #5658d2 100%);
+  background-image:
+    linear-gradient(
+      141deg,
+      #2959b3 0%,
+      #485fc7 71%,
+      #5658d2 100%);
 }
 @media screen and (max-width: 768px) {
   .hero.is-link.is-bold .navbar-menu {
-    background-image: linear-gradient(141deg, #2959b3 0%, #485fc7 71%, #5658d2 100%);
+    background-image:
+      linear-gradient(
+        141deg,
+        #2959b3 0%,
+        #485fc7 71%,
+        #5658d2 100%);
   }
 }
 .hero.is-info {
@@ -10378,11 +10482,21 @@ a.has-text-danger-dark:focus {
   color: #3e8ed0;
 }
 .hero.is-info.is-bold {
-  background-image: linear-gradient(141deg, #208fbc 0%, #3e8ed0 71%, #4d83db 100%);
+  background-image:
+    linear-gradient(
+      141deg,
+      #208fbc 0%,
+      #3e8ed0 71%,
+      #4d83db 100%);
 }
 @media screen and (max-width: 768px) {
   .hero.is-info.is-bold .navbar-menu {
-    background-image: linear-gradient(141deg, #208fbc 0%, #3e8ed0 71%, #4d83db 100%);
+    background-image:
+      linear-gradient(
+        141deg,
+        #208fbc 0%,
+        #3e8ed0 71%,
+        #4d83db 100%);
   }
 }
 .hero.is-success {
@@ -10447,11 +10561,21 @@ a.has-text-danger-dark:focus {
   color: #48c78e;
 }
 .hero.is-success.is-bold {
-  background-image: linear-gradient(141deg, #29b35e 0%, #48c78e 71%, #56d2af 100%);
+  background-image:
+    linear-gradient(
+      141deg,
+      #29b35e 0%,
+      #48c78e 71%,
+      #56d2af 100%);
 }
 @media screen and (max-width: 768px) {
   .hero.is-success.is-bold .navbar-menu {
-    background-image: linear-gradient(141deg, #29b35e 0%, #48c78e 71%, #56d2af 100%);
+    background-image:
+      linear-gradient(
+        141deg,
+        #29b35e 0%,
+        #48c78e 71%,
+        #56d2af 100%);
   }
 }
 .hero.is-warning {
@@ -10516,11 +10640,21 @@ a.has-text-danger-dark:focus {
   color: #ffe08a;
 }
 .hero.is-warning.is-bold {
-  background-image: linear-gradient(141deg, #ffb657 0%, #ffe08a 71%, #fff6a3 100%);
+  background-image:
+    linear-gradient(
+      141deg,
+      #ffb657 0%,
+      #ffe08a 71%,
+      #fff6a3 100%);
 }
 @media screen and (max-width: 768px) {
   .hero.is-warning.is-bold .navbar-menu {
-    background-image: linear-gradient(141deg, #ffb657 0%, #ffe08a 71%, #fff6a3 100%);
+    background-image:
+      linear-gradient(
+        141deg,
+        #ffb657 0%,
+        #ffe08a 71%,
+        #fff6a3 100%);
   }
 }
 .hero.is-danger {
@@ -10585,11 +10719,21 @@ a.has-text-danger-dark:focus {
   color: #f14668;
 }
 .hero.is-danger.is-bold {
-  background-image: linear-gradient(141deg, #fa0a62 0%, #f14668 71%, #f7595f 100%);
+  background-image:
+    linear-gradient(
+      141deg,
+      #fa0a62 0%,
+      #f14668 71%,
+      #f7595f 100%);
 }
 @media screen and (max-width: 768px) {
   .hero.is-danger.is-bold .navbar-menu {
-    background-image: linear-gradient(141deg, #fa0a62 0%, #f14668 71%, #f7595f 100%);
+    background-image:
+      linear-gradient(
+        141deg,
+        #fa0a62 0%,
+        #f14668 71%,
+        #f7595f 100%);
   }
 }
 .hero.is-small .hero-body {
