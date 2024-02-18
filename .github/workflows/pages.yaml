@@ -35,12 +35,7 @@ jobs:
         run: "task gh-pages"
         shell: bash
 
-      - name: Commit Static Website
-        run: |
-          git config --global user.name 'GH Actions'
-          git config --global user.email 'pthomison+gh-actions-goapp-clock@gmail.com'
-          git add docs
-          git commit -am "Doc Updates"
-          git checkout docs --
-          git merge main
-          git push
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: docs
