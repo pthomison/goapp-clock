@@ -25,6 +25,12 @@ tasks:
       - task: build-webapp
       - go build -o tmp/goappclock .
 
+  dev:
+    cmds:
+      - task: tidy-n-fmt
+      - task: npm-deps
+      - air
+
   gh-pages:
     cmds:
       - task: build
