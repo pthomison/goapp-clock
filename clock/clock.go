@@ -4,7 +4,6 @@ import (
 	"time"
 
 	"github.com/maxence-charriere/go-app/v9/pkg/app"
-	"github.com/sirupsen/logrus"
 )
 
 const (
@@ -18,8 +17,9 @@ type Clock struct {
 	ticker *time.Ticker
 
 	// rendered fields
-	time string
-	date string
+	time         string
+	date         string
+	frequencyErr error
 
 	timeFormat string
 	dateFormat string
@@ -32,6 +32,8 @@ func NewClock(timeFormat string, dateFormat string, updateFreq time.Duration) *C
 		timeFormat: timeFormat,
 		dateFormat: dateFormat,
 		frequency:  updateFreq,
+
+		frequencyErr: nil,
 	}
 
 	c.ticker = time.NewTicker(updateFreq)
@@ -64,6 +66,12 @@ func (c *Clock) OnMount(ctx app.Context) {
 }
 
 func (c *Clock) Render() app.UI {
+
+	frequencyColor := "has-text-grey-lighter"
+	if c.frequencyErr != nil {
+		frequencyColor = "has-text-danger"
+	}
+
 	timeView := app.P().
 		Class("has-text-grey-lighter").
 		Class("subtitle is-spaced").
@@ -94,18 +102,18 @@ func (c *Clock) Render() app.UI {
 
 			app.Label().
 				Class("label").
-				Class("has-text-grey-lighter").
+				Class(frequencyColor).
 				Text("Refresh Frequency"),
 			app.Input().
 				Class("input").
 				OnInput(func(ctx app.Context, e app.Event) {
 					newFreq := ctx.JSSrc().Get("value").String()
 					h, err := time.ParseDuration(newFreq)
-					if err != nil {
-						logrus.Info("Error!", err.Error())
+					c.frequencyErr = err
+					if err == nil {
+						c.UpdateFrequency(ctx, h)
 					}
 
-					c.UpdateFrequency(ctx, h)
 				}).Value(c.frequency),
 		),
 	)
