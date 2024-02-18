@@ -1,8 +1,8 @@
-const cacheName = "app-" + "e18b302d99cd4ab0babe1a9c8a2c73e96225ace5";
+const cacheName = "app-" + "e59a8b8502a237d2fd5965359a35e55162e5e3d5";
 const resourcesToCache = ["/goapp-clock","/goapp-clock/app.css","/goapp-clock/app.js","/goapp-clock/manifest.webmanifest","/goapp-clock/wasm_exec.js","/goapp-clock/web/app.wasm","/goapp-clock/web/index.css","/goapp-clock/web/index.js","/goapp-clock/web/static/android-chrome-192x192.png","/goapp-clock/web/static/android-chrome-512x512.png","/goapp-clock/web/static/apple-touch-icon.png"];
 
 self.addEventListener("install", (event) => {
-  console.log("installing app worker e18b302d99cd4ab0babe1a9c8a2c73e96225ace5");
+  console.log("installing app worker e59a8b8502a237d2fd5965359a35e55162e5e3d5");
 
   event.waitUntil(
     caches
@@ -28,7 +28,7 @@ self.addEventListener("activate", (event) => {
       );
     })
   );
-  console.log("app worker e18b302d99cd4ab0babe1a9c8a2c73e96225ace5 is activated");
+  console.log("app worker e59a8b8502a237d2fd5965359a35e55162e5e3d5 is activated");
 });
 
 self.addEventListener("fetch", (event) => {
