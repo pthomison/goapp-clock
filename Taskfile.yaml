@@ -44,8 +44,8 @@ tasks:
 
   gh-pages:
     cmds:
-      - task: build
-      - ./tmp/goappclock --build --path goapp-clock --out docs
+      - task: build-webapp
+      - go run ./cmd/build/... --path goapp-clock --out docs
       - mv ./web/* ./docs/web/ && rm -r ./web
 
   static-host:
