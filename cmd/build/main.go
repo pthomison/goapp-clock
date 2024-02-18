@@ -13,6 +13,9 @@ func main() {
 	path := flag.String("path", "", "Base path for static build")
 	flag.Parse()
 
+	app.RouteFunc("/", func() app.Composer {
+		return &clock.Root{}
+	})
 	h := clock.App()
 
 	// Deploy under a path
