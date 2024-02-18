@@ -17,6 +17,12 @@ func App() *app.Handler {
 			"web/index.js",
 		},
 		AutoUpdateInterval: time.Second * 1,
+		Icon: app.Icon{
+			Default:    "/web/static/android-chrome-192x192.png",
+			Large:      "/web/static/android-chrome-512x512.png",
+			SVG:        "/web/static/favicon.ico",
+			AppleTouch: "/web/static/apple-touch-icon.png",
+		},
 		// Env: map[string]string{
 		// 	"GOAPP_ROOT_PREFIX": "/docs",
 		// },

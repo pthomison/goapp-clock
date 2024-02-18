@@ -19,6 +19,7 @@ tasks:
   bundle:
     cmds:
       - ./node_modules/.bin/esbuild index.js --bundle --outfile=./web/index.js
+      - cp -R ./static ./web/
 
   build-webapp:
     cmds:
