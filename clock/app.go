@@ -14,8 +14,17 @@ func App() *app.Handler {
 			"web/index.css",
 		},
 		Scripts: []string{
-			"web/index.js            ",
+			"web/index.js",
 		},
 		AutoUpdateInterval: time.Second * 1,
+		// Env: map[string]string{
+		// 	"GOAPP_ROOT_PREFIX": "/docs",
+		// },
+		// RawHeaders: []string{
+		// 	`<meta property="og:url" content="https://pojntfx.github.io/liwasc/">`,
+		// 	`<meta property="og:title" content="liwasc">`,
+		// 	`<meta property="og:description" content="List, wake and scan nodes in a network.">`,
+		// 	`<meta property="og:image" content="https://pojntfx.github.io/liwasc/web/icon.png">`,
+		// },
 	}
 }
