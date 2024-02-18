@@ -39,6 +39,7 @@ jobs:
         run: |
           git config --global user.name 'GH Actions'
           git config --global user.email 'pthomison+gh-actions-goapp-clock@gmail.com'
+          git add docs
           git commit -am "Doc Updates"
           git checkout docs --
           git merge main
