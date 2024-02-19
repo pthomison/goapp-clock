@@ -25,31 +25,31 @@ tasks:
     cmds:
       - task: tidy-n-fmt
       - task: bundle
-      - GOARCH=wasm GOOS=js go build -o ./web/app.wasm ./cmd/webapp/...
+      - GOARCH=wasm GOOS=js go build -o ./web/app.wasm ./cmd/...
 
   build-server:
     cmds:
       - task: build-webapp
-      - go build -o tmp/goappclock-server ./cmd/server/...
+      - go build -o tmp/goapp-clock ./cmd/...
 
   run:
     cmds:
       - task: build-webapp
-      - go run ./cmd/server/...
+      - go run ./cmd/... --serve
 
-  dev:
-    cmds:
-      - task: tidy-n-fmt
-      - task: npm-deps
-      - air
+  # dev:
+  #   cmds:
+  #     - task: tidy-n-fmt
+  #     - task: npm-deps
+  #     - air
 
   gh-pages:
     cmds:
       - task: build-webapp
-      - go run ./cmd/build/... --path goapp-clock --out docs
+      - go run ./cmd/... --build --path goapp-clock --out docs
       - mv ./web/* ./docs/web/ && rm -r ./web
 
-  static-host:
-    cmds:
-      - task: gh-pages
-      - python3 -m http.server --directory . 8888
+  # static-host:
+  #   cmds:
+  #     - task: gh-pages
+  #     - python3 -m http.server --directory . 8888
