@@ -27,7 +27,7 @@ tasks:
       - task: bundle
       - GOARCH=wasm GOOS=js go build -o ./web/app.wasm ./cmd/...
 
-  build-server:
+  build:
     cmds:
       - task: build-webapp
       - go build -o tmp/goapp-clock ./cmd/...
@@ -37,19 +37,14 @@ tasks:
       - task: build-webapp
       - go run ./cmd/... --serve
 
-  # dev:
-  #   cmds:
-  #     - task: tidy-n-fmt
-  #     - task: npm-deps
-  #     - air
+  dev:
+    cmds:
+      - task: tidy-n-fmt
+      - task: npm-deps
+      - air
 
   gh-pages:
     cmds:
       - task: build-webapp
       - go run ./cmd/... --build --path goapp-clock --out docs
       - mv ./web/* ./docs/web/ && rm -r ./web
-
-  # static-host:
-  #   cmds:
-  #     - task: gh-pages
-  #     - python3 -m http.server --directory . 8888
